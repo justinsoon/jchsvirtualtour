@@ -1,0 +1,350 @@
+<skin marginleft="0" marginright="0" margintop="0" marginbottom="0" ><element x="-127" y="-55" anchor="7" width="192" height="32" id="controller" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="container" mask="0" >
+<element x="-105" y="-41" anchor="7" width="287" height="50" id="controller_bg" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="rectangle" bordercolor="0x000000" borderalpha="1" backgroundcolor="0x3f3f3f" backgroundalpha="0.498039" backgroundvisible="1" borderwidth="0" borderradius="6" >
+</element>
+<element x="64" y="-32" anchor="7" width="32" height="32" id="fullscreen_off" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="button" btnurl="images/fullscreen_off.png" overurl="images/fullscreen_off__o.png" >
+<action src="click" type="exitfullscreen" value="" value2="" target="" />
+</element>
+<element x="64" y="-32" anchor="7" width="32" height="32" id="fullscreen" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="button" btnurl="images/fullscreen.png" overurl="images/fullscreen__o.png" >
+<action src="click" type="enterfullscreen" value="" value2="" target="" />
+</element>
+<element x="32" y="-32" anchor="7" width="32" height="32" id="movemode_1" visible="0" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="button" btnurl="images/movemode_1.png" overurl="images/movemode_1__o.png" >
+<action src="click" type="changeviewermode" value="0" value2="" target="" />
+</element>
+<element x="32" y="-32" anchor="7" width="32" height="32" id="movemode_2" visible="0" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="button" btnurl="images/movemode_2.png" overurl="images/movemode_2__o.png" >
+<action src="click" type="changeviewermode" value="1" value2="" target="" />
+</element>
+<element x="0" y="-32" anchor="7" width="32" height="32" id="info" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="button" btnurl="images/info.png" overurl="images/info__o.png" >
+<action src="click" type="tooglevisible" value="" value2="" target="userdata" />
+<action src="click" type="tooglevisible" value="" value2="" target="screentint" />
+<action src="click" type="hide" value="" value2="" target="controller" />
+</element>
+<element x="64" y="0" anchor="0" width="32" height="32" id="autorotate" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="button" btnurl="images/autorotate.png" overurl="images/autorotate__o.png" >
+<action src="click" type="startautorotate" value="0.2/5/1" value2="" target="" />
+</element>
+<element x="-32" y="-32" anchor="7" width="32" height="32" id="autorotate_off" visible="0" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="button" btnurl="images/autorotate_off.png" overurl="images/autorotate_off__o.png" >
+<action src="click" type="stopautorotate" value="" value2="" target="" />
+</element>
+<element x="-64" y="-32" anchor="7" width="32" height="32" id="zoomout" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="button" btnurl="images/zoomout.png" overurl="images/zoomout__o.png" >
+<action src="pressed" type="zoomout" value="" value2="" target="$self" />
+</element>
+<element x="-96" y="-32" anchor="7" width="32" height="32" id="zoomin" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="button" btnurl="images/zoomin.png" overurl="images/zoomin__o.png" >
+<action src="pressed" type="zoomin" value="" value2="" target="$self" />
+</element>
+<element x="99" y="-29" anchor="7" width="73" height="27" id="Text 7" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="text" text="Welcome" align="1" color="0xffffff" bordercolor="0x000000" borderalpha="1" backgroundcolor="0x000000" backgroundalpha="1" backgroundvisible="1" borderwidth="1" borderradius="21" wordwrap="0" scrollbar="0" autosize="0" >
+<action src="click" type="tooglevisible" value="" value2="" target="Text 1" />
+<action src="enter" type="setscale" value="1.0500/1.0500" value2="" target="$self" />
+<action src="leave" type="setscale" value="1.0000/1.0000" value2="" target="$self" />
+</element>
+</element>
+<element x="-105" y="-30" anchor="4" width="210" height="60" id="loading" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="container" mask="0" >
+<action src="click" type="hide" value="" value2="" target="$self" />
+<action src="loaded" type="hide" value="" value2="" target="$self" />
+<action src="reload" type="show" value="" value2="" target="$self" />
+<element x="0" y="0" anchor="0" width="210" height="60" id="loadingbg" visible="1" alpha="0.5" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="rectangle" bordercolor="0x000000" borderalpha="1" backgroundcolor="0x000000" backgroundalpha="0.666667" backgroundvisible="1" borderwidth="0" borderradius="0" >
+</element>
+<element x="16" y="12" anchor="0" width="178" height="23" id="loadingtext" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="3" handcursor="0" type="text" text="Loading... $p%" align="0" color="0xffffff" bordercolor="0x000000" borderalpha="1" backgroundcolor="0xffffff" backgroundalpha="1" backgroundvisible="0" borderwidth="0" borderradius="0" wordwrap="0" scrollbar="0" autosize="1" >
+</element>
+<element x="15" y="35" anchor="0" width="182" height="13" id="loadingbar" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="3" handcursor="0" type="rectangle" bordercolor="0x808080" borderalpha="1" backgroundcolor="0xffffff" backgroundalpha="1" backgroundvisible="1" borderwidth="0" borderradius="0" >
+<modifier src="loading" type="scalex" offset="0" factor="1" />
+</element>
+</element>
+<element x="100" y="140" anchor="0" width="5" height="5" id="ht_node" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="hotspot" distort="0" distance="500" >
+<action src="click" type="gotonext" value="$hu" value2="$ht" target="$ht" />
+<element x="-16" y="-16" anchor="0" width="32" height="32" id="ht_node_visited" visible="0" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="button" btnurl="images/ht_node_visited.png" overurl="images/ht_node_visited__o.png" >
+</element>
+<element x="-16" y="-16" anchor="0" width="32" height="32" id="ht_node_image" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="button" btnurl="images/ht_node_image.png" overurl="images/ht_node_image__o.png" >
+</element>
+<element x="-75" y="-130" anchor="0" width="150" height="100" id="hotspot_preview" visible="0" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="container" mask="0" >
+<element x="0" y="0" anchor="0" width="150" height="100" id="preview_picture_frame " visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="rectangle" bordercolor="0x000000" borderalpha="1" backgroundcolor="0x000000" backgroundalpha="0.666667" backgroundvisible="1" borderwidth="0" borderradius="0" >
+</element>
+<element x="5" y="5" anchor="0" width="140" height="90" id="Preview NodeImage" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="image" imgurl="images/preview_nodeimage.png" >
+</element>
+<element x="4" y="76" anchor="0" width="142" height="20" id="tooltip" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="text" text="$hs" align="1" color="0xffffff" bordercolor="0x000000" borderalpha="1" backgroundcolor="0x000000" backgroundalpha="0.666667" backgroundvisible="1" borderwidth="0" borderradius="0" wordwrap="0" scrollbar="0" autosize="0" >
+</element>
+<element x="123" y="7" anchor="0" width="20" height="20" id="checkmark_tick" visible="0" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="button" btnurl="images/checkmark_tick0.png" >
+</element>
+</element>
+</element>
+<element x="250" y="50" anchor="0" width="5" height="5" id="ht_url" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="hotspot" distort="0" distance="500" >
+<action src="click" type="gotourl" value="$hu" value2="$ht" target="$self" />
+<element x="-14" y="-16" anchor="0" width="32" height="32" id="ht_url_image" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="button" btnurl="images/ht_url_image.png" overurl="images/ht_url_image__o.png" >
+</element>
+<element x="-50" y="21" anchor="0" width="100" height="20" id="tt_ht_url" visible="0" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="text" text="$hs" align="1" color="0xffffff" bordercolor="0x000000" borderalpha="1" backgroundcolor="0x000000" backgroundalpha="0.666667" backgroundvisible="1" borderwidth="0" borderradius="0" wordwrap="0" scrollbar="0" autosize="1" >
+</element>
+</element>
+<element x="250" y="50" anchor="0" width="5" height="5" id="ht_info" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="hotspot" distort="0" distance="500" >
+<action src="click" type="hide" value="" value2="" target="controller" />
+<action src="click" type="show" value="" value2="" target="screentint" />
+<action src="click" type="settext" value="&lt;b&gt;$hs&lt;/b&gt;" value2="" target="info_title" />
+<action src="click" type="settext" value="$hd" value2="" target="info_text_body" />
+<action src="click" type="show" value="" value2="" target="information" />
+<element x="-16" y="-16" anchor="0" width="32" height="32" id="ht_info_image" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="button" btnurl="images/ht_info_image.png" overurl="images/ht_info_image__o.png" >
+</element>
+<element x="-50" y="21" anchor="0" width="100" height="20" id="tt_information" visible="0" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="text" text="$hs" align="1" color="0xffffff" bordercolor="0x000000" borderalpha="1" backgroundcolor="0x000000" backgroundalpha="0.666667" backgroundvisible="1" borderwidth="0" borderradius="0" wordwrap="0" scrollbar="0" autosize="1" >
+</element>
+</element>
+<element x="250" y="50" anchor="0" width="5" height="5" id="ht_image" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="hotspot" distort="0" distance="500" >
+<action src="click" type="hide" value="" value2="" target="controller" />
+<action src="click" type="show" value="" value2="" target="screentint" />
+<action src="click" type="show" value="" value2="" target="close" />
+<action src="click" type="settext" value="$r$hu" value2="" target="popup_image" />
+<action src="click" type="show" value="" value2="" target="popup_image" />
+<action src="click" type="show" value="" value2="" target="image_popup" />
+<element x="-16" y="-16" anchor="0" width="32" height="32" id="ht_image_image" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="button" btnurl="images/ht_image_image.png" overurl="images/ht_image_image__o.png" >
+</element>
+<element x="-50" y="21" anchor="0" width="100" height="20" id="tt_ht_image" visible="0" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="text" text="$hs" align="1" color="0xffffff" bordercolor="0x000000" borderalpha="1" backgroundcolor="0x000000" backgroundalpha="0.666667" backgroundvisible="1" borderwidth="0" borderradius="0" wordwrap="0" scrollbar="0" autosize="1" >
+</element>
+</element>
+<element x="250" y="50" anchor="0" width="5" height="5" id="ht_video_file" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="hotspot" distort="0" distance="500" >
+<action src="click" type="hide" value="" value2="" target="controller" />
+<action src="click" type="show" value="" value2="" target="screentint" />
+<action src="click" type="show" value="" value2="" target="close" />
+<action src="click" type="show" value="" value2="" target="video_popup_controls_file" />
+<action src="click" type="settext" value="$r$hu" value2="" target="popup_video_file" />
+<action src="click" type="show" value="" value2="" target="popup_video_file" />
+<action src="click" type="show" value="" value2="" target="video_popup_file" />
+<element x="-16" y="-16" anchor="0" width="32" height="32" id="ht_video_video_file" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="button" btnurl="images/ht_video_video_file.png" overurl="images/ht_video_video_file__o.png" >
+</element>
+<element x="-50" y="21" anchor="0" width="100" height="20" id="tt_ht_video_file" visible="0" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="text" text="$hs" align="1" color="0xffffff" bordercolor="0x000000" borderalpha="1" backgroundcolor="0x000000" backgroundalpha="0.666667" backgroundvisible="1" borderwidth="0" borderradius="0" wordwrap="0" scrollbar="0" autosize="1" >
+</element>
+</element>
+<element x="250" y="50" anchor="0" width="5" height="5" id="ht_video_url" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="hotspot" distort="0" distance="500" >
+<action src="click" type="hide" value="" value2="" target="controller" />
+<action src="click" type="show" value="" value2="" target="screentint" />
+<action src="click" type="show" value="" value2="" target="close" />
+<action src="click" type="show" value="" value2="" target="video_popup_controls_url" />
+<action src="click" type="settext" value="$hu" value2="" target="popup_video_url" />
+<action src="click" type="show" value="" value2="" target="popup_video_url" />
+<action src="click" type="show" value="" value2="" target="video_popup_url" />
+<element x="-16" y="-16" anchor="0" width="32" height="32" id="ht_video_video_url" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="button" btnurl="images/ht_video_video_url.png" overurl="images/ht_video_video_url__o.png" >
+</element>
+<element x="-50" y="21" anchor="0" width="100" height="20" id="tt_ht_video_url" visible="0" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="text" text="$hs" align="1" color="0xffffff" bordercolor="0x000000" borderalpha="1" backgroundcolor="0x000000" backgroundalpha="0.666667" backgroundvisible="1" borderwidth="0" borderradius="0" wordwrap="0" scrollbar="0" autosize="1" >
+</element>
+</element>
+<element x="250" y="50" anchor="0" width="5" height="5" id="ht_video_vimeo" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="hotspot" distort="0" distance="500" >
+<action src="click" type="hide" value="" value2="" target="controller" />
+<action src="click" type="show" value="" value2="" target="screentint" />
+<action src="click" type="show" value="" value2="" target="close" />
+<action src="click" type="settext" value="$hu" value2="" target="popup_video_vimeo" />
+<action src="click" type="show" value="" value2="" target="popup_video_vimeo" />
+<action src="click" type="show" value="" value2="" target="video_popup_vimeo" />
+<element x="-16" y="-16" anchor="0" width="32" height="32" id="ht_video_video_vimeo" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="button" btnurl="images/ht_video_video_vimeo.png" overurl="images/ht_video_video_vimeo__o.png" >
+</element>
+<element x="-50" y="21" anchor="0" width="100" height="20" id="tt_ht_video_vimeo" visible="0" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="text" text="$hs" align="1" color="0xffffff" bordercolor="0x000000" borderalpha="1" backgroundcolor="0x000000" backgroundalpha="0.666667" backgroundvisible="1" borderwidth="0" borderradius="0" wordwrap="0" scrollbar="0" autosize="1" >
+</element>
+</element>
+<element x="250" y="50" anchor="0" width="5" height="5" id="ht_video_youtube" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="hotspot" distort="0" distance="500" >
+<action src="click" type="hide" value="" value2="" target="controller" />
+<action src="click" type="show" value="" value2="" target="screentint" />
+<action src="click" type="show" value="" value2="" target="close" />
+<action src="click" type="settext" value="$hu" value2="" target="popup_video_youtube" />
+<action src="click" type="show" value="" value2="" target="popup_video_youtube" />
+<action src="click" type="show" value="" value2="" target="video_popup_youtube" />
+<element x="-16" y="-16" anchor="0" width="32" height="32" id="ht_video_video_youtube" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="button" btnurl="images/ht_video_video_youtube.png" overurl="images/ht_video_video_youtube__o.png" >
+</element>
+<element x="-50" y="21" anchor="0" width="100" height="20" id="tt_ht_video_youtube" visible="0" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="text" text="$hs" align="1" color="0xffffff" bordercolor="0x000000" borderalpha="1" backgroundcolor="0x000000" backgroundalpha="0.666667" backgroundvisible="1" borderwidth="0" borderradius="0" wordwrap="0" scrollbar="0" autosize="1" >
+</element>
+</element>
+<element x="0" y="0" anchor="0" width="620" height="480" id="screentint" visible="0" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="rectangle" bordercolor="0x000000" borderalpha="1" backgroundcolor="0x000000" backgroundalpha="0.392157" backgroundvisible="1" borderwidth="1" borderradius="0" >
+<action src="click" type="hide" value="" value2="" target="close" />
+<action src="click" type="show" value="" value2="" target="controller" />
+<action src="click" type="hide" value="" value2="" target="screentint" />
+<action src="click" type="hide" value="" value2="" target="popup_video_youtube" />
+<action src="click" type="hide" value="" value2="" target="video_popup_youtube" />
+<action src="click" type="hide" value="" value2="" target="popup_video_vimeo" />
+<action src="click" type="hide" value="" value2="" target="video_popup_vimeo" />
+<action src="click" type="hide" value="" value2="" target="popup_video_url" />
+<action src="click" type="hide" value="" value2="" target="video_popup_url" />
+<action src="click" type="hide" value="" value2="" target="video_popup_controls_url" />
+<action src="click" type="hide" value="" value2="" target="popup_video_file" />
+<action src="click" type="hide" value="" value2="" target="video_popup_file" />
+<action src="click" type="hide" value="" value2="" target="video_popup_controls_file" />
+<action src="click" type="hide" value="" value2="" target="image_popup" />
+<action src="click" type="hide" value="" value2="" target="popup_image" />
+<action src="click" type="hide" value="" value2="" target="information" />
+<action src="click" type="hide" value="" value2="" target="userdata" />
+</element>
+<element x="-120" y="-80" anchor="4" width="240" height="140" id="userdata" visible="0" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="container" mask="0" >
+<element x="0" y="0" anchor="0" width="240" height="140" id="userdatabg" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="rectangle" bordercolor="0x000000" borderalpha="1" backgroundcolor="0x000000" backgroundalpha="0.784314" backgroundvisible="1" borderwidth="0" borderradius="0" >
+</element>
+<element x="10" y="10" anchor="0" width="220" height="20" id="title" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="text" text="&lt;b&gt;$ut&lt;/b&gt;" align="0" color="0xffffff" bordercolor="0x000000" borderalpha="1" backgroundcolor="0xffffff" backgroundalpha="1" backgroundvisible="0" borderwidth="0" borderradius="0" wordwrap="0" scrollbar="0" autosize="0" >
+</element>
+<element x="10" y="30" anchor="0" width="220" height="73" id="description" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="text" text="$ud" align="0" color="0xffffff" bordercolor="0x000000" borderalpha="1" backgroundcolor="0xffffff" backgroundalpha="1" backgroundvisible="0" borderwidth="0" borderradius="0" wordwrap="1" scrollbar="1" autosize="0" >
+</element>
+<element x="10" y="50" anchor="0" width="220" height="20" id="author" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="text" text="$ua" align="0" color="0xffffff" bordercolor="0x000000" borderalpha="1" backgroundcolor="0xffffff" backgroundalpha="1" backgroundvisible="0" borderwidth="0" borderradius="0" wordwrap="0" scrollbar="0" autosize="0" >
+</element>
+<element x="10" y="70" anchor="0" width="220" height="23" id="datetime" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="text" text="$ue" align="0" color="0xffffff" bordercolor="0x000000" borderalpha="1" backgroundcolor="0xffffff" backgroundalpha="1" backgroundvisible="0" borderwidth="0" borderradius="0" wordwrap="0" scrollbar="0" autosize="1" >
+</element>
+<element x="10" y="110" anchor="0" width="220" height="23" id="copyright" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="text" text="&amp;#169; $uc" align="0" color="0xffffff" bordercolor="0x000000" borderalpha="1" backgroundcolor="0xffffff" backgroundalpha="1" backgroundvisible="0" borderwidth="0" borderradius="0" wordwrap="0" scrollbar="0" autosize="1" >
+</element>
+<element x="204" y="4" anchor="0" width="32" height="32" id="userdata_close" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="button" btnurl="images/userdata_close.png" overurl="images/userdata_close__o.png" >
+<action src="click" type="hide" value="" value2="" target="$parent" />
+<action src="click" type="hide" value="" value2="" target="screentint" />
+<action src="click" type="show" value="" value2="" target="controller" />
+</element>
+</element>
+<element x="-150" y="-126" anchor="4" width="300" height="250" id="information" visible="0" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="container" mask="0" >
+<element x="0" y="0" anchor="0" width="300" height="250" id="informationbg" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="rectangle" bordercolor="0xffffff" borderalpha="1" backgroundcolor="0x000000" backgroundalpha="0.784314" backgroundvisible="1" borderwidth="0" borderradius="0" >
+</element>
+<element x="12" y="45" anchor="0" width="276" height="193" id="info_text_body" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="text" text="" align="0" color="0xffffff" bordercolor="0x000000" borderalpha="1" backgroundcolor="0xffffff" backgroundalpha="1" backgroundvisible="0" borderwidth="0" borderradius="0" wordwrap="1" scrollbar="1" autosize="0" >
+</element>
+<element x="12" y="15" anchor="0" width="245" height="20" id="info_title" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="text" text="" align="0" color="0xffffff" bordercolor="0x000000" borderalpha="1" backgroundcolor="0xffffff" backgroundalpha="1" backgroundvisible="0" borderwidth="0" borderradius="0" wordwrap="0" scrollbar="0" autosize="0" >
+</element>
+<element x="263" y="4" anchor="0" width="32" height="32" id="ht_info_close" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="button" btnurl="images/ht_info_close.png" overurl="images/ht_info_close__o.png" >
+<action src="click" type="hide" value="" value2="" target="$parent" />
+<action src="click" type="hide" value="" value2="" target="screentint" />
+<action src="click" type="show" value="" value2="" target="controller" />
+</element>
+</element>
+<element x="10" y="10" anchor="0" width="496" height="384" id="image_popup" visible="0" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="container" mask="0" >
+<element x="-20" y="-20" anchor="4" width="40" height="40" id="loading_image" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="button" btnurl="images/loading_image.png" >
+</element>
+<element x="0" y="0" anchor="0" width="496" height="384" id="popup_image" visible="0" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="external" unloadonhide="1" swfurl="" >
+</element>
+</element>
+<element x="10" y="10" anchor="0" width="496" height="384" id="video_popup_file" visible="0" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="container" mask="0" >
+<element x="-20" y="-20" anchor="4" width="40" height="40" id="loading_video_file" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="button" btnurl="images/loading_video_file.png" >
+</element>
+</element>
+<element x="-142" y="-31" anchor="7" width="284" height="25" id="video_popup_controls_file" visible="0" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="container" mask="0" >
+<element x="259" y="0" anchor="0" width="25" height="25" id="ht_video_play_file" visible="0" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="button" btnurl="images/ht_video_play_file.png" overurl="images/ht_video_play_file__o.png" >
+<action src="click" type="playsound" value="1" value2="" target="popup_video_file" />
+<action src="click" type="hide" value="" value2="" target="$self" />
+<action src="click" type="show" value="" value2="" target="ht_video_pause_file" />
+<action src="click" type="hide" value="" value2="" target="video_popup_play_text_file" />
+</element>
+<element x="259" y="0" anchor="0" width="25" height="25" id="ht_video_pause_file" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="button" btnurl="images/ht_video_pause_file.png" overurl="images/ht_video_pause_file__o.png" >
+<action src="click" type="pausesound" value="" value2="" target="popup_video_file" />
+<action src="click" type="hide" value="" value2="" target="$self" />
+<action src="click" type="show" value="" value2="" target="ht_video_play_file" />
+</element>
+</element>
+<element x="10" y="10" anchor="0" width="496" height="384" id="video_popup_url" visible="0" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="container" mask="0" >
+<element x="-20" y="-20" anchor="4" width="40" height="40" id="loading_video_url" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="button" btnurl="images/loading_video_url.png" >
+</element>
+</element>
+<element x="-142" y="-31" anchor="7" width="284" height="25" id="video_popup_controls_url" visible="0" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="container" mask="0" >
+<element x="259" y="0" anchor="0" width="25" height="25" id="ht_video_play_url" visible="0" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="button" btnurl="images/ht_video_play_url.png" overurl="images/ht_video_play_url__o.png" >
+<action src="click" type="playsound" value="1" value2="" target="popup_video_url" />
+<action src="click" type="hide" value="" value2="" target="$self" />
+<action src="click" type="show" value="" value2="" target="ht_video_pause_url" />
+</element>
+<element x="259" y="0" anchor="0" width="25" height="25" id="ht_video_pause_url" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="button" btnurl="images/ht_video_pause_url.png" overurl="images/ht_video_pause_url__o.png" >
+<action src="click" type="pausesound" value="" value2="" target="popup_video_url" />
+<action src="click" type="hide" value="" value2="" target="$self" />
+<action src="click" type="show" value="" value2="" target="ht_video_play_url" />
+</element>
+</element>
+<element x="10" y="10" anchor="0" width="496" height="384" id="video_popup_vimeo" visible="0" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="container" mask="0" >
+<element x="-20" y="-20" anchor="4" width="40" height="40" id="loading_video_vimeo" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="button" btnurl="images/loading_video_vimeo.png" >
+</element>
+</element>
+<element x="10" y="10" anchor="0" width="496" height="384" id="video_popup_youtube" visible="0" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="container" mask="0" >
+<element x="-20" y="-20" anchor="4" width="40" height="40" id="loading_video_youtube" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="button" btnurl="images/loading_video_youtube.png" >
+</element>
+</element>
+<element x="-37" y="6" anchor="2" width="32" height="32" id="close" visible="0" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="button" btnurl="images/close0.png" overurl="images/close0__o.png" >
+<action src="click" type="hide" value="" value2="" target="$self" />
+<action src="click" type="show" value="" value2="" target="controller" />
+<action src="click" type="hide" value="" value2="" target="screentint" />
+<action src="click" type="hide" value="" value2="" target="popup_video_youtube" />
+<action src="click" type="hide" value="" value2="" target="video_popup_youtube" />
+<action src="click" type="hide" value="" value2="" target="popup_video_vimeo" />
+<action src="click" type="hide" value="" value2="" target="video_popup_vimeo" />
+<action src="click" type="hide" value="" value2="" target="popup_video_url" />
+<action src="click" type="hide" value="" value2="" target="video_popup_url" />
+<action src="click" type="hide" value="" value2="" target="video_popup_controls_url" />
+<action src="click" type="hide" value="" value2="" target="popup_video_file" />
+<action src="click" type="hide" value="" value2="" target="video_popup_file" />
+<action src="click" type="hide" value="" value2="" target="video_popup_controls_file" />
+<action src="click" type="hide" value="" value2="" target="image_popup" />
+<action src="click" type="hide" value="" value2="" target="popup_image" />
+</element>
+<element x="-228" y="-143" anchor="4" width="436" height="298" id="Text 1" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="3" handcursor="0" type="text" text="
+Welcome to the virtual tour of John Champe High School!" align="1" color="0xffffff" bordercolor="0x000000" borderalpha="1" backgroundcolor="0x000000" backgroundalpha="0.784314" backgroundvisible="1" borderwidth="8" borderradius="0" wordwrap="0" scrollbar="1" autosize="0" >
+<element x="126" y="64" anchor="0" width="182" height="172" id="Image 1" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="0" handcursor="0" type="image" imgurl="images/image_1.png" >
+</element>
+<element x="142" y="253" anchor="0" width="152" height="22" id="Text 4" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="text" text="Click for Instructions" align="1" color="0xffffff" bordercolor="0xffffff" borderalpha="1" backgroundcolor="0x000000" backgroundalpha="0.784314" backgroundvisible="1" borderwidth="1" borderradius="0" wordwrap="0" scrollbar="0" autosize="0" >
+<action src="click" type="hide" value="" value2="" target="$self" />
+<action src="click" type="hide" value="" value2="" target="Image 1" />
+<action src="click" type="show" value="" value2="" target="Text 5" />
+<action src="click" type="show" value="" value2="" target="Text 6" />
+<action src="enter" type="setscale" value="1.0300/1.0300" value2="" target="$self" />
+<action src="leave" type="setscale" value="1.0000/1.0000" value2="" target="$self" />
+</element>
+<element x="31" y="64" anchor="0" width="383" height="170" id="Text 5" visible="0" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="text" text="Instructions:
+
+- Click on the nodes to navigate the tour.
+- Checkmarks on the nodes indicate that a panorama has already been visited.
+- Imbeded pictures are scattered throughout the tour. To view, just click on one. To stop viewing, click on the picture again. In fact, there is one just behind you.
+- For imbeded videos, clicking the video will toggle between play and pause.
+- Click on the &quot;Toggle Scrollbar&quot; button to access all panoramas. Click on a panorama to visit it.
+- Use the tool bar at the bottom of the screen to assist in navigating the tour.
+    i. The (+) and (-) buttons zoom in and out (can also use scroll wheel).
+   ii. The circular arrows toggle autorotate, which slowly rotates a panorama automatically.
+  iii. The ( i ) button gives little tid bits of information for special panoramas. 
+  iv. The cross of arrows toggles viewing modes (arrow keys may also be used).
+  v. The box with an arrow in it toggles fullscreen mode.
+ vi. Click the &quot;Welcome&quot; button to bring up this menu again. 
+- Please turn your volume ON, as there will be narration in the tour. 
+- Also, make sure to visit the Auditorium to check out our promo video. 
+
+   Thank You for virtually visiting John Champe High 
+	                   School!
+
+	         Produced by Virtual Expeditions
+
+                              Senior members: 
+	              William Ogle, Justin Soon,
+	      Kevin Yoon, Khati Aryan, and Nafi Ahnaf
+" align="0" color="0xffffff" bordercolor="0x000000" borderalpha="1" backgroundcolor="0x000000" backgroundalpha="0" backgroundvisible="1" borderwidth="0" borderradius="0" wordwrap="1" scrollbar="1" autosize="0" >
+</element>
+<element x="170" y="254" anchor="0" width="100" height="21" id="Text 6" visible="0" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="text" text="Return" align="1" color="0xffffff" bordercolor="0xffffff" borderalpha="1" backgroundcolor="0x000000" backgroundalpha="0.784314" backgroundvisible="1" borderwidth="1" borderradius="0" wordwrap="0" scrollbar="0" autosize="0" >
+<action src="click" type="hide" value="" value2="" target="$self" />
+<action src="click" type="hide" value="" value2="" target="Text 5" />
+<action src="click" type="show" value="" value2="" target="Text 4" />
+<action src="click" type="show" value="" value2="" target="Image 1" />
+<action src="enter" type="setscale" value="1.0300/1.0300" value2="" target="$self" />
+<action src="leave" type="setscale" value="1.0000/1.0000" value2="" target="$self" />
+</element>
+<element x="9" y="-10" anchor="2" width="32" height="32" id="close" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="button" btnurl="images/close.png" overurl="images/close__o.png" >
+<action src="click" type="hide" value="" value2="" target="$parent" />
+<action src="click" type="show" value="" value2="" target="controller" />
+<action src="click" type="hide" value="" value2="" target="screentint" />
+<action src="click" type="hide" value="" value2="" target="popup_video_youtube" />
+<action src="click" type="hide" value="" value2="" target="video_popup_youtube" />
+<action src="click" type="hide" value="" value2="" target="popup_video_vimeo" />
+<action src="click" type="hide" value="" value2="" target="video_popup_vimeo" />
+<action src="click" type="hide" value="" value2="" target="popup_video_url" />
+<action src="click" type="hide" value="" value2="" target="video_popup_url" />
+<action src="click" type="hide" value="" value2="" target="video_popup_controls_url" />
+<action src="click" type="hide" value="" value2="" target="popup_video_file" />
+<action src="click" type="hide" value="" value2="" target="video_popup_file" />
+<action src="click" type="hide" value="" value2="" target="video_popup_controls_file" />
+<action src="click" type="hide" value="" value2="" target="image_popup" />
+<action src="click" type="hide" value="" value2="" target="popup_image" />
+</element>
+</element>
+<element x="5" y="5" anchor="0" width="558" height="110" id="Scrollarea 1" visible="0" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="" >
+<action src="over" type="settext" value="$hs" value2="" target="Text 3" />
+<element x="4" y="4" anchor="0" width="122" height="84" id="Cloner 1" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="" >
+<element x="4.92" y="8.33" anchor="0" width="108" height="72" id="NodeImage 1" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="1" type="image" imgurl="images/nodeimage_1.jpg" >
+<action src="click" type="gotonext" value="$hu" value2="" target="" />
+<action src="enter" type="show" value="" value2="" target="Text 3" />
+<action src="leave" type="hide" value="" value2="" target="Text 3" />
+<action src="enter" type="settext" value="$hs" value2="" target="Text 3" />
+<element x="-1" y="52" anchor="0" width="112" height="23" id="Text 3" visible="0" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="text" text="" align="1" color="0xffffff" bordercolor="0x000000" borderalpha="0" backgroundcolor="0x000000" backgroundalpha="0.294118" backgroundvisible="1" borderwidth="1" borderradius="0" wordwrap="1" scrollbar="1" autosize="0" >
+</element>
+<element x="94" y="-2" anchor="0" width="20" height="20" id="checkmark_tick" visible="0" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="button" btnurl="images/checkmark_tick.png" >
+</element>
+</element>
+</element>
+</element>
+<element x="2.9" y="85" anchor="0" width="122" height="42" id="Rectangle 1" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="8" handcursor="1" type="rectangle" bordercolor="0x000000" borderalpha="1" backgroundcolor="0x000000" backgroundalpha="1" backgroundvisible="1" borderwidth="3" borderradius="19" >
+<action src="click" type="tooglevisible" value="" value2="" target="Scrollarea 1" />
+<action src="enter" type="setscale" value="1.0300/1.0300" value2="" target="$self" />
+<action src="leave" type="setscale" value="1.0000/1.0000" value2="" target="$self" />
+<element x="3" y="11" anchor="0" width="117" height="24" id="Text 2" visible="1" alpha="1" angle="0" scalex="1" scaley="1" center="4" handcursor="0" type="text" text="Toggle Scrollbar" align="1" color="0xffffff" bordercolor="0x000000" borderalpha="1" backgroundcolor="0x000000" backgroundalpha="1" backgroundvisible="1" borderwidth="1" borderradius="0" wordwrap="0" scrollbar="0" autosize="0" >
+</element>
+</element>
+</skin>

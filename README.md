@@ -1,2 +1,1 @@
-# jchsvirtualtour
-John Champe High School Virtual Tour
+Coming Soon Template

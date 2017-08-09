@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour start="node1">
+  <panorama id="node1">
+    <input overlap="1" width="6229" levelbias="0.400" levelingpitch="0" leveltilesize="510" levelingroll="0" height="6229" levelbiashidpi="0.400" leveltileurl="tiles/Front Entrance/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="6229" height="6229" preload="0" predecode="0"/>
+      <level width="3114" height="3114" preload="0" predecode="0"/>
+      <level width="1557" height="1557" preload="0" predecode="0"/>
+      <level width="778" height="778" preload="0" predecode="0"/>
+      <level width="389" height="389" preload="1" predecode="1"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start pan="-164.8" fov="70" tilt="0"/>
+      <min pan="-180" fov="5" tilt="-28.3676"/>
+      <max pan="180" fov="120" tilt="28.3676"/>
+    </view>
+    <userdata comment="" author="" datetime="" title="Front Entrance" info="" latitude="" longitude="" description="This is what you'll see when you enter JCHS everyday!" tags="Final Panoramas" copyright="" source=""/>
+    <hotspots width="180" wordwrap="1" height="20">
+      <label enabled="1" width="180" background="1" backgroundalpha="1" wordwrap="1" border="1" borderradius="1" backgroundcolor="0xffffff" height="20" bordercolor="0x000000" textcolor="0x000000" textalpha="1" borderalpha="1"/>
+      <polystyle backgroundalpha="0.2509803921568627" mode="0" handcursor="1" backgroundcolor="0x0000ff" bordercolor="0x0000ff" borderalpha="1"/>
+      <hotspot skinid="ht_node" target="" title="Entrance" pan="-159.23" url="{node2}" tilt="2.14" description="" id="Point01"/>
+    </hotspots>
+    <media/>
+    <transition blendtime="1" enabled="0" zoomoutpause="1" zoomfov="20" softedge="0" blendcolor="0x000000" zoomin="0" zoomout="0" type="crossdissolve" zoomspeed="2"/>
+    <control contextfullscreen="0" dblclickfullscreen="1" lockedwheel="0" hideabout="0" sensitivity="8" lockedmouse="0" lockedkeyboardzoom="0" invertcontrol="1" simulatemass="1" invertwheel="0" lockedkeyboard="0" speedwheel="1"/>
+  </panorama>
+  <panorama id="node2">
+    <input overlap="1" width="6254" levelbias="0.400" levelingpitch="0" leveltilesize="510" levelingroll="0" height="6254" levelbiashidpi="0.400" leveltileurl="tiles/Entrance/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="6254" height="6254" preload="0" predecode="0"/>
+      <level width="3127" height="3127" preload="0" predecode="0"/>
+      <level width="1563" height="1563" preload="0" predecode="0"/>
+      <level width="781" height="781" preload="0" predecode="0"/>
+      <level width="390" height="390" preload="1" predecode="1"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start pan="90.1" fov="70" tilt="0"/>
+      <min pan="-180" fov="5" tilt="-27.993"/>
+      <max pan="180" fov="120" tilt="27.993"/>
+    </view>
+    <userdata comment="" author="" datetime="" title="Entrance" info="" latitude="" longitude="" description="This is the confluence of the school, the mixing point of all things Champe." tags="Hallways" copyright="" source=""/>
+    <hotspots width="180" wordwrap="1" height="20">
+      <label enabled="1" width="180" background="1" backgroundalpha="1" wordwrap="1" border="1" borderradius="1" backgroundcolor="0xffffff" height="20" bordercolor="0x000000" textcolor="0x000000" textalpha="1" borderalpha="1"/>
+      <polystyle backgroundalpha="0.2509803921568627" mode="0" handcursor="1" backgroundcolor="0x0000ff" bordercolor="0x0000ff" borderalpha="1"/>
+      <hotspot skinid="ht_node" target="" title="Front Entrance" pan="-55.51" url="{node1}" tilt="1.67" description="" id="Point01"/>
+    </hotspots>
+    <media/>
+    <transition blendtime="1" enabled="0" zoomoutpause="1" zoomfov="20" softedge="0" blendcolor="0x000000" zoomin="0" zoomout="0" type="crossdissolve" zoomspeed="2"/>
+    <control contextfullscreen="0" dblclickfullscreen="1" lockedwheel="0" hideabout="0" sensitivity="8" lockedmouse="0" lockedkeyboardzoom="0" invertcontrol="1" simulatemass="1" invertwheel="0" lockedkeyboard="0" speedwheel="1"/>
+  </panorama>
+</tour>
