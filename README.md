@@ -1,1 +1,1 @@
-#1 JCHS Virtual Tour
+# JCHS Virtual Tour
